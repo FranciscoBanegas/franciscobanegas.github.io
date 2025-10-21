@@ -1,28 +1,23 @@
 source "https://rubygems.org"
 
 # Hello! This is where you manage which Jekyll version is used to run.
-# When you want to use a different version, change it below, save the
-# file and run `bundle install`. Run Jekyll with `bundle exec`, like so:
-#
-#     bundle exec jekyll serve
-#
-# This will help ensure the proper Jekyll version is running.
-# Happy Jekylling!
-gem "jekyll", "~> 3.8"
+# Change this to 4.x for better compatibility with Chirpy.
+gem "jekyll", "~> 4.3" # Versión actualizada para Chirpy
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
-
-# If you want to use GitHub Pages, remove the "gem "jekyll"" above and
-# uncomment the line below. To upgrade, run `bundle update github-pages`.
 # gem "github-pages", group: :jekyll_plugins
-gem "minima", "~> 2.5"
-gem "concurrent-ruby", "~> 1.1.1"
+#gem "minima", "~> 2.5"
+gem "jekyll-theme-chirpy"
+# gem "concurrent-ruby", "~> 1.1.1" # Línea eliminada, ya no es necesaria
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-  gem "jekyll-feed", "~> 0.11"
-  gem "jekyll-seo-tag", "~> 2.5"
-  gem "jekyll-sitemap", "~> 1.2"
+  # Estas gemas ya están incluidas o son dependencias del tema Chirpy.
+  # Es mejor dejarlas o quitarlas según la documentación de Chirpy,
+  # pero las mantendremos por seguridad, asegurando versiones recientes.
+  gem "jekyll-feed"
+  gem "jekyll-seo-tag"
+  gem "jekyll-sitemap"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
